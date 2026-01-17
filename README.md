@@ -61,7 +61,3 @@ Initialized with a list of dictionaries. Each dictionary must have at least `id`
 ```bash
 poetry run pytest
 ```
-
-## License
-
-MIT
