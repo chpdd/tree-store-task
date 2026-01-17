@@ -1,5 +1,5 @@
 from pydantic import BaseModel, TypeAdapter
-from typing import Any, Optional
+from typing import Any
 
 
 class Item(BaseModel):
@@ -37,7 +37,7 @@ class TreeStore:
         """Returns the original array of items."""
         return self._initial_items
 
-    def getItem(self, id: int) -> Optional[dict[str, Any]]:
+    def getItem(self, id: int) -> dict[str, Any] | None:
         """Returns an item by its ID."""
         return self._items_by_id.get(id)
 
